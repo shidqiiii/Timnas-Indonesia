@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "open sans";
+  scroll-behavior: smooth;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px;
+}
+
+.jumbotron {
+  padding: 60px;
+  background-color: #b90b0b;
+  color: white;
+}
+
+nav {
+  padding: 15px 10px;
+  background-color: #8c0909;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+nav a {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin: auto;
+  padding: 40px;
+}
+
+.home-image {
+  grid-column: 2;
+  margin: auto;
+}
+
+.home-content {
+  grid-column: 3 / span 2;
+  margin: auto;
+}
+
+.home-content p {
+  margin: 20px;
+  text-align: justify;
+}
+
+.formation {
+  width: 50%;
+}
+
+.squad-image {
+  position: relative;
+  padding: 20px;
+  margin: 20px;
+}
+
+.photo-formation {
+  position: absolute;
+  background-color: #f4f4f4;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+
+.keeper {
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-centerback {
+  bottom: 20%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.right-centerback {
+  bottom: 20%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.left-fullback {
+  bottom: 25%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.right-fullback {
+  bottom: 25%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.central-midfielder {
+  bottom: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.defensive-midfielder {
+  bottom: 40%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.attacking-midfielder {
+  bottom: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-winger {
+  bottom: 60%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.right-winger {
+  bottom: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.striker {
+  bottom: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#squad {
+  background-color: #b90b0b;
+  padding-top: 10px;
+}
+
+#squad h1 {
+  color: #f4f4f4;
+}
+
+.squad-list {
+  display: flex;
+  background-color: #b90b0b;
+  padding: 20px 40px;
+  overflow-x: auto;
+}
+
+.squad-item {
+  background-color: #f4f4f4;
+  min-height: 350px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5%;
+  box-shadow: 5px 5px 5px #8c0909;
+}
+
+.squad-photo {
+  border-radius: 5%;
+  width: 200px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  object-position: top;
+  background-color: #f4f4f4;
+}
+
+#news {
+  margin-bottom: 20px;
+}
+
+.news-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 50px;
+}
+
+.news-item {
+  background-color: #f4f4f4;
+  width: 300px;
+  min-height: 430px;
+  margin: 10px 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 1);
+}
+
+.news-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 10px;
+}
+
+.news-item p {
+  font-size: 15px;
+  padding: 5px 30px;
+  text-align: justify;
+}
+
+.news-item a {
+  color: black;
+  font-size: 15px;
+  display: inline;
+  padding: 5px 20px;
+  margin: auto 50px 20px 50px;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #8c0909;
+  color: #f4f4f4;
+  font-size: 0.75rem;
+  padding: 10px;
+}
+
+aside {
+  top: 40%;
+  right: 3%;
+  padding: 15px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 1);
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.topnav {
+  display: none;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  display: block;
+  right: 0;
+  top: 0;
+}
+
+@media only screen and (max-width: 1023px) {
+  .wrapper {
+    display: block;
+  }
+
+  .formation {
+    width: 100%;
+  }
+
+  .left-centerback {
+    left: 40%;
+  }
+
+  .right-centerback {
+    left: 60%;
+  }
+
+  .left-fullback {
+    left: 20%;
+  }
+
+  .right-fullback {
+    left: 80%;
+  }
+
+  .central-midfielder {
+    left: 40%;
+  }
+
+  .defensive-midfielder {
+    left: 60%;
+  }
+
+  .left-winger {
+    left: 30%;
+  }
+
+  .right-winger {
+    left: 70%;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .topnav {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 758px) {
+  .photo-formation {
+    width: 50px;
+    height: 50px;
+  }
+
+  .keeper {
+    bottom: 2%;
+  }
+
+  .central-midfielder {
+    left: 40%;
+  }
+
+  .defensive-midfielder {
+    left: 60%;
+  }
+
+  .attacking-midfielder {
+    top: 30%;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .topnav {
+    display: block;
+  }
+}
